@@ -41,5 +41,6 @@ post 'post/:id' do
   @updated_post.name = params[:name]
   @updated_post.content = params[:content]
   @updated_post.save
+  erb :posts/:id
 end
 end
