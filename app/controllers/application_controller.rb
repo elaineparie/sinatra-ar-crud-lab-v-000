@@ -38,5 +38,6 @@ end
 
 post 'post/:id' do
   @updated_post = Post.find(params[:id])
+  @updated_post[:name] = params[:name]
 end
 end
