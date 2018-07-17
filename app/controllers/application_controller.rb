@@ -45,6 +45,7 @@ patch '/posts/:id' do
 end
 
 delete "/posts/#{@post.id}/delete" do
+    @post = Post.find(params[:id])
   erb :delete
 end
 end
