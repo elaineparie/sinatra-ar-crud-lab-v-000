@@ -44,7 +44,7 @@ patch '/posts/:id' do
   redirect "/posts/#{@updated_post.id}"
 end
 
-delete '/posts/:id/delete' do 
+delete '/posts/:id/delete' do
   erb :delete
 end
 end
