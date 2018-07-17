@@ -19,7 +19,7 @@ describe "Blog Post App" do
 
       click_button 'submit'
 
-      expect(Post.all.count).to eq(3)
+      expect(Post.all.count).to eq(2)
       expect(Post.last.name).to eq("my favorite blog post")
     end
 
