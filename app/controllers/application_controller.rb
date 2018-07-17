@@ -41,6 +41,6 @@ patch '/posts/:id' do
   @updated_post.name = params[:name]
   @updated_post.content = params[:content]
   @updated_post.save
-#  redirect "/posts/#{@updated_post.id}"
+  redirect "/posts/#{@updated_post.id}"
 end
 end
