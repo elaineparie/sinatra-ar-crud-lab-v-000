@@ -37,5 +37,6 @@ get '/posts/:id/edit' do
 end
 
 post 'post/:id' do
+  @updated_post = Post.find(params[:id])
 end
 end
