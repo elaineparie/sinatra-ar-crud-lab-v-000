@@ -35,4 +35,7 @@ get '/posts/:id/edit' do
   @post = Post.find(params[:id])
   erb :edit
 end
+
+post 'post/:id' do
+end
 end
