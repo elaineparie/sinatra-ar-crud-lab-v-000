@@ -43,4 +43,7 @@ patch '/posts/:id' do
   @updated_post.save
   redirect "/posts/#{@updated_post.id}"
 end
+
+delete '/posts/:id/delete' do 
+end 
 end
