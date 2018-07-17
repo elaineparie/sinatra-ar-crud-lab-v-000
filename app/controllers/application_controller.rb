@@ -32,5 +32,6 @@ get '/posts/:id' do
 end
 
 get '/posts/:id/edit' do
+  erb :edit
 end 
 end
