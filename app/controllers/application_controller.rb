@@ -36,7 +36,7 @@ get '/posts/:id/edit' do
   erb :edit
 end
 
-post 'post/:id' do
+patch 'post/:id' do
   @updated_post = Post.find(params[:id])
   @updated_post.name = params[:name]
   @updated_post.content = params[:content]
