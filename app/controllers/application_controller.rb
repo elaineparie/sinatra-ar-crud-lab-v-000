@@ -44,8 +44,9 @@ patch '/posts/:id' do
   redirect "/posts/#{@updated_post.id}"
 end
 
-delete "/posts/#{@post.id}/delete" do
+delete '/posts/:id/delete' do
     @post = Post.find(params[:id])
   erb :delete
+
 end
 end
