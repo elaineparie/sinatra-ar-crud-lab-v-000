@@ -39,5 +39,6 @@ end
 post 'post/:id' do
   @updated_post = Post.find(params[:id])
   @updated_post.name = params[:name]
+  @updated_post.content = params[:content]
 end
 end
